@@ -1,16 +1,37 @@
-# Qwen Fine-Tuned Field Extractor
+# 🧠 Qwen Fine-Tuned Field Extractor (Arabic Dataset)
 
-A lightweight project to run your fine-tuned Qwen model for structured information extraction.  
-It provides both a **Streamlit UI** and a **FastAPI server** interface.
+This project provides a **Streamlit web interface** and a **Python script** for running a fine-tuned **Qwen model** that extracts key information fields from **Arabic text**.  
+It was trained on a custom Arabic dataset for structured field extraction tasks (such as names, phone numbers, addresses, and order details).
 
 ---
 
-## 🧩 Features
+## 🚀 Features
 
-- Loads a fine-tuned Qwen model (`transformers` compatible)
-- Extracts structured fields from unstructured text (expects JSON output)
-- Supports:
-  - 🖥️ **Streamlit app** for interactive use
-  - ⚙️ **FastAPI server** for production/API integration
-- GPU acceleration via `torch` if available
+- Fine-tuned **Qwen language model** on **Arabic text**
+- Extracts structured information and key-value pairs from unstructured Arabic sentences
+- Runs locally or via Streamlit interface
+- Detects JSON-like model outputs or falls back to smart line parsing
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone or extract the folder:**
+   ```bash
+   git clone https://github.com/EslamWalid/qwen-finetune-field-extractor.git
+   cd qwen-finetune-field-extractor
+
+1. **Install dependencies:**
+
+pip install -r requirements.txt
+
+2. **Add your fine-tuned Arabic model to the folder:**
+
+Ensure the model and tokenizer files are in a directory (default: ./qwen-finetuned-model).
+
+Adjust MODEL_NAME in run_model.py if your path differs.
+
+3. **Launch Streamlit app:**
+
+streamlit run app_streamlit.py
 
