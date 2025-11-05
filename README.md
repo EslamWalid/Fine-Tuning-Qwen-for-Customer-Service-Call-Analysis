@@ -22,8 +22,9 @@ It was trained on a custom Arabic dataset for structured field extraction tasks 
    cd qwen-finetune-field-extractor
 
 1. **Install dependencies:**
+   ```bash
 
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 2. **Add your fine-tuned Arabic model to the folder:**
 
@@ -32,6 +33,6 @@ Ensure the model and tokenizer files are in a directory (default: ./qwen-finetun
 Adjust MODEL_NAME in run_model.py if your path differs.
 
 3. **Launch Streamlit app:**
-
-streamlit run app_streamlit.py
+   ```bash
+   streamlit run app_streamlit.py
 
